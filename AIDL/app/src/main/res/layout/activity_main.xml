@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lh.aidl.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:height="70dp"
+        android:hint="total"
+        android:layout_alignTop="@+id/tv3"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:height="70dp"
+        android:layout_marginStart="18dp"
+        android:id="@+id/tv2"
+        android:hint="1"
+        android:layout_alignTop="@id/tv"
+        android:layout_alignBottom="@+id/tv"
+        android:layout_toEndOf="@+id/tv" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv3"
+        android:width="100dp"
+        android:height="70dp"
+        android:hint="2"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv2" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add"
+        android:text="求和"
+        android:layout_below="@+id/tv"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="82dp" />
+
+
+</RelativeLayout>
